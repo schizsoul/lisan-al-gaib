@@ -427,10 +427,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
 
-
-
     place-items: center;
 
+    box-shadow: var(--clr-light-accent) 0 0 0 100vmax;
+    clip-path: inset(0 -100vmax);
 }
 
 @media (max-width: 815px) {
