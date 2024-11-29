@@ -476,7 +476,7 @@ p {
     width: 100%;
     top: 0px;
     left: 0px;
-    background-image: url(/assets/old-newspapers-arrangement-high-angle.jpg);
+    background-image: url(assets/old-newspapers-arrangement-high-angle.jpg);
     background-size: cover;
     clip-path: polygon(0 66%, 100% 33%, 100% 100%, 0% 100%);
     position: absolute;
