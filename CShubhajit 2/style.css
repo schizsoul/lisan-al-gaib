@@ -227,12 +227,12 @@ nav a:hover {
     
 }
 
-.hero-text {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-direction: column; */
-}
+/* .hero-text {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
 
 .hero-title > h1 {
     font-size: var(--heading-h1);
@@ -286,10 +286,10 @@ nav a:hover {
     padding-block-end: var(--page-padding);
 }
 
-.hsl-item {
-    /* min-width: 5vw;
-    min-height: 5vw; */
-}
+/* .hsl-item {
+    min-width: 5vw;
+    min-height: 5vw;
+} */
 
 .hsl-item > img {
     /* width: 4vw; */
