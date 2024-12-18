@@ -1,2 +1,2 @@
-# lisan-al-gaib
-I see ess ess!
+# Schizsoul
+This is a hobby repo
