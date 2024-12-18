@@ -1,0 +1,28 @@
+/* Base styles for the container */
+.responsive-block {
+    display: grid;
+    gap: 20px; /* Space between text and image */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamic column layout */
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Responsive text styles */
+.text h1 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem); /* Dynamic font size */
+    margin: 0;
+}
+
+.text p {
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Dynamic font size */
+    line-height: 1.6;
+}
+
+/* Image styles */
+.image img {
+    width: 100%; /* Ensure the image fits its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image looks good in its frame */
+    border-radius: 10px; /* Optional: Rounded corners */
+}

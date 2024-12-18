@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full-Bleed Background</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative; /* Establishes containing block for pseudo-element */
+      max-width: 1920px;
+      margin: 0 auto; /* Centers the container */
+      z-index: 1; /* Keeps content above the pseudo-element */
+    }
+
+    .container::before {
+      content: ''; /* Necessary for the pseudo-element to render */
+      position: absolute;
+      top: 0;
+      left: 50%; /* Start from the middle of the container */
+      transform: translateX(-50vw); /* Push pseudo-element to fully cover the left */
+      width: 100vw; /* Full width of the viewport */
+      height: 100%; /* Match the container's height */
+      background: linear-gradient(to right, #ff7f50, #1e90ff); /* Example background */
+      z-index: -1; /* Places it behind the content */
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Full-Bleed Background</h1>
+      <p>This implementation ensures the full-bleed background spans the entire viewport, even on larger screens.</p>
+    </div>
+  </div>
+</body>
+</html>
